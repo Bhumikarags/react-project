@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav{
+    /* padding: 5px; */
+    background:linear-gradient(90deg,black,green,black);
+    position: fixed;
+    top: 0;
+   z-index: 2;
+    /* box-shadow: 2px 2px 5px greenyellow ; */
+    width: 100%;
+
+}
+.main{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+    background:linear-gradient(90deg, black, green , black);
+    /* padding: 5px; */
+    display: flex;
+}
+
+ nav{
+    color:#000;
+
+ }
+.ulist{
+    padding-left: 300px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left:30px;
+    justify-content: space-evenly;
+}
+.ulist li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+/* .ulist li a{
+    color:black;
+} */
+.logo{
+    /* background: linear-gradient(90deg,black,grey); */
+    width: 30%;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.ulist li:hover{
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.wid{
+    left: 0 !important;
+    transition: 1s;
+}
+button:hover{
+    cursor: pointer; 
+    
+}
+
+.main button{
+    display: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #000;
+    color: green;
+    border: none;
+    outline: none;
+}
+@media(max-width:700px){
+  .main button{
+    display: block;}
+    .logo{width: 100%;}
+    .ulist{
+        
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+         display: block;
+        background: #000;
+        padding-left: 0;
+    }
+    
+    .ulist li{
+        background:linear-gradient(90deg,black,black,green,black,black);
+        text-align: center;
+        display: block;
+        width: 100%;
+        
+        display: inline-block;
+    }
+
+  /* .main{flex-direction: column;} */
+  .logo{width: 100%;}
+
+}
+

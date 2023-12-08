@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#service img{display: none;}
+#service{
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+.hh{ margin-top: 70px;}
+h1{
+    color:greenyellow;
+    /* text-shadow: 1px 1px 4px orangered; */
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+  
+   
+}
+.smain{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    /* background:plum; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+@media(max-width:700px) {
+    .smain{
+        flex-direction: column;
+    }
+}
